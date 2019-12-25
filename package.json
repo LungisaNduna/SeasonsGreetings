@@ -1,0 +1,22 @@
+{
+  "name": "seasonsgreetings",
+  "version": "1.0.0",
+  "description": "A book to place all of your seasons greetings",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LungisaNduna/SeasonsGreetings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LungisaNduna/SeasonsGreetings/issues"
+  },
+  "homepage": "https://github.com/LungisaNduna/SeasonsGreetings#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

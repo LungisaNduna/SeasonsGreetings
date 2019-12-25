@@ -1,0 +1,250 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book of Love</title>
+
+    <link rel="stylesheet" href="./supportFiles/bootstrap.min.css" />
+    <style>
+        .outside {
+            background-image: url(https://prodimage.images-bn.com/pimages/9781542844437_p0_v1_s550x406.jpg);
+            background-size: contain;
+        }
+
+        .inside {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR7cS4hKLhmwn-A7JY1henKl597EQ1Nq2xZlSjIekZql4lsRA8r);
+            background-size: cover;
+            border-image: url(https://prodimage.images-bn.com/pimages/9781542844437_p0_v1_s550x406.jpg) 5% repeat;
+        }
+
+        .cover {
+            color: beige;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .hard {
+            background-color: #00F;
+        }
+
+        .pg {
+            background-image: url("./resources/parchment.jpg");
+            background-size: cover;
+        }
+
+        .flipbook .shadow {
+            box-shadow: 0 4px 10px #666;
+        }
+
+        #pgVideo {
+            width: 120%;
+            height: 100%;
+        }
+
+        #hueyGif {
+            height: 40%;
+            width: auto;
+        }
+
+        .container {
+            width: 95%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <div id="flipbook">
+        <div id="frontCover" class="hard outside cover">
+            <div class="container">
+                <h2>2019</h2>
+                <p>by Lungisa</p>
+            </div>
+        </div>
+        <div class="hard inside"></div>
+
+
+        <div id="frontPage" class="pg">
+            <div class="container">
+                <h1>2019 is almost over</h1>
+                <p>
+                    So I thought we could look back at it
+                </p>
+                
+                <p>
+                    Sorry I just don't take enough pictures so 
+                    this may be a little light in content.
+                </p>
+            </div>
+            
+        </div>
+
+        <div id="careerImg" class="pg">
+            <div class="container">
+                <h1>Started a Career</h1>
+                <img src="./resources/workgroup.jpg" alt="The people I work with"/>
+            </div>
+        </div>
+
+        <div id="careerText" class="pg">
+            <div class="container">
+                <p>This year I joined the Britehouse Digital Graduate Program</p>
+                <p>In the picture we were at Gold Reef City having a team building exercise</p>
+                <p>Since then I have moved to the Public Sector division</p>
+                <p>It's been a great year with a lot of people helping me develop my skills</p>
+                <p>Shout out to a few people</p>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Kirstin (my fearless manager)</li>
+                        <li>All the other graduates</li>
+                        <li>Tyrone (making code sexy)</li>
+                        <li>Siyabonga (the zen coder)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Gavin (amazing designer and mentor)</li>
+                        <li>Lawrence (my new manager)</li>
+                        <li>Andre (mentor and boss)</li>
+                        <li>The public sector staff (warmest welcome)</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li>Dave (mentor and motivator)</li>
+                        <li>Joseph (with his lack of basketball IQ)</li>
+                        <li>Gideon ("what did you break today?")</li>
+                        <li>The public sector staff (warmest welcome)</li>
+                    </ul>
+                </div>
+                <p>Hope I didnt't forget anyone</p>
+            </div>
+        </div>
+
+        <div id="vuyoBDpage" class="pg">
+            <div class="container">
+                <h1>Mixing things up</h1>
+                <p>Vuyo turned 6 this year and had a great birthday helping my sister make him a mocktail</p>
+                <p>He also finished pre-school, I still can't say that with a straight face.</p>
+                <video id="pgVideo" src="./resources/raw-dis-vuyo vid.mp4" autoplay loop muted style="width: 90%;"></video>
+            </div>
+            
+        </div>
+
+        <div id="graduation" class="pg">
+            <div class="container">
+                <img src="./resources/graduation.jpg" style="margin-top: 5%;"/>
+            </div>
+        </div>
+
+        <div class="pg" id="weddingImg">
+            <div class="container">
+                <h1>The Wedding</h1>
+                <img src="./resources/wedding.jpg" alt="My sisters wedding">
+                <div class="container">
+                    <p class="lead">My older sister got married <small>(not the one I live with)</small></p>
+                    <p>
+                        first time I have seen most of these people in years
+                        saw my granny for the first time in years, 
+                        and so did her great grandson
+                    </p>
+                    <p>
+                        In his excited rambling he asked "Granny why do you look like a witch?"
+                    </p>
+                    <p>
+                        I was completely thrown off, 
+                        but she calmly answered that she was getting old.
+                        Big ups to the woman that raised my Dad.
+                    </p>
+                </div>                
+            </div>
+        </div>
+
+        <div class="pg" id="granny">
+            <div class="container" >
+                <img src="./resources/granny.jpg" style="margin-top: 5%; " />
+
+            </div>
+        </div>
+
+        <div class="pg" id="wrapup">
+            <div class="container">
+                <img src="./resources/vuyo and I.jpg" />
+                <p class="lead">Shout out to the Springboks for winning</p>
+                <p>
+                    Vuyo's first world cup and he was 
+                    screaming along with the rest of the fans.
+                    <small>I think he was just keeping up with the energy</small>
+                </p>
+                <p>
+                    Loving this year with my son, family and friends. 
+                    The growth was great. Look how far we've come from 
+                    <span class="text-warning">2016</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="pg" id="seasonGreeting" style="position:relative">
+            <img src="./resources/merryChristmas.png" alt="christmas bells"/>
+            <div class="container">
+                <p class="lead">Seasons Greetings</p>
+                <p class="lead">
+                    A warm Season's Greetings to you and yours.
+                </p>
+                <p class="lead">
+                    Merry Christmas and Happy New Years.
+                </p>
+                <blockquote class="blockquote">
+                    <p>Especially if you wear glass. This will be the first time you see <emphasis>2020</emphasis>.</p>
+                    <footer class="blockquote-footer"><cite title="Source Title">Dad Joke</cite></footer>
+                </blockquote>
+            </div>
+            
+            <img src="./resources/new years.jpg" alt="city fireworks pixelart" />
+        </div>
+
+        <div class="pg" id="signoff">
+            <div class="container">
+                <H3>Thats all folks</H3>
+                <p>To make this I used TurnJS find out more about it <a href="http://www.turnjs.com/">here</a></p>
+                <p>I would like to credit the artists but I found most of the stuff some time ago and therefore struggle
+                    to find who originally made it</p>
+                <p>Check me out <a href="https://github.com/LungisaNduna/profile">here</a></p>
+                <img id="hueyGif" src="./resources/hueyWalkSilhoette.gif" alt="I'm out">
+            </div>
+        </div>
+
+        <div class="hard inside"></div>
+        <div class="hard outside"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="supportFiles/turn.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script type="text/javascript">
+
+        $(window).ready(function () {
+            $("#flipbook").turn({
+                width: 800,
+                height: 600,
+                autoCenter: true,
+                inclination: 2,
+                duration: 1000,
+            });
+        });
+
+        $(window).bind('keydown', function (e) {
+            if (e.keyCode == 37)
+                $("#flipbook").turn('previous');
+            if (e.keyCode == 39)
+                $("#flipbook").turn('next');
+        });
+
+    </script>
+</body>
+
+</html>
