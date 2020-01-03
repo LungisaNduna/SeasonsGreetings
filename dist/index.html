@@ -8,6 +8,11 @@
 
     <link rel="stylesheet" href="./supportFiles/bootstrap.min.css" />
     <style>
+        body{
+            align-content: center;
+            padding-left: 20%;
+            padding-top: 3%;
+        }
         .outside {
             background-image: url(https://prodimage.images-bn.com/pimages/9781542844437_p0_v1_s550x406.jpg);
             background-size: contain;
@@ -59,11 +64,24 @@
             display: none;
         }
 
+        #pgVideo {
+            height: auto;
+        }
+
         @media only screen and (max-width: 768px) {
+            body{
+                padding-top: 0;
+            }
             #ScreenWarning {
                 display: block;
                 color: black;
                 width: 400px;
+            }
+            .page {
+                width: 100%;
+            }
+            .outside {
+                background-size:cover
             }
         }
 
@@ -80,7 +98,7 @@
         </button>
     </div>
 
-    <div id="flipbook">
+    <div id="flipbook" class="book">
         <div id="frontCover" class="hard outside cover">
             <div class="container">
                 <h2>2019</h2>
@@ -245,6 +263,25 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            var alterBookID = function() {
+                var ww = document.body.clientWidth;
+                console.log("The screen with is " + ww);
+                if (ww < 740) {
+                    $('#flipbook').attr("id", "scroll");
+                }else{
+                    $('#scroll').attr("id", "flipbook");
+                };
+        };
+        $(window).resize(function(){
+            alterBookID();
+            location.reload();
+        });
+        //Fire it when the page first loads:
+        alterBookID();
+        });
+    </script>
     <script src="supportFiles/turn.min.js"></script>
     <script src="supportFiles/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
